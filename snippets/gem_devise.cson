@@ -1,0 +1,9 @@
+'.source.ruby, .source.ruby.rails':
+
+  'authenicate_user':
+    'prefix': 'au'
+    'body': 'authenticate_user!'
+
+  'current_user':
+    'prefix': 'cu'
+    'body': 'current_user'

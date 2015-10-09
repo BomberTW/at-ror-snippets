@@ -1,0 +1,25 @@
+'.text.html, .source.ruby.rails, .text.html.ruby, .text.html.erb':
+
+  'table for rails':
+    'prefix': 'tableerb'
+    'body': """
+    <table class="${1:table}">
+      <thead>
+        <tr>
+          <th> $4 </th>
+          <th> $5 </th>
+          <th> $6 </th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <% @${2:groups}.each do |${3:group}| %>
+          <tr>
+            <td> $7 </td>
+            <td> $8 </td>
+            <td> $9 </td>
+          </tr>
+        <% end %>
+      </tbody>
+    </table>
+    """

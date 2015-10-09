@@ -1,0 +1,23 @@
+'.source.ruby':
+  'get to':
+    'prefix': 'get'
+    'body': 'get \'${1:}\', to: \'${2:controller#action}\''
+  'get :on => :member':
+    'prefix': 'getm'
+    'body': 'get \'${1:recent}\'${2:, :on => :${3:member}}'
+  'get :on => :collection':
+    'prefix': 'getc'
+    'body': 'get \'${1:recent}\'${2:, :on => :${3:collection}}'
+  'post to':
+    'prefix': 'post'
+    'body': 'post \'${1:}\', to: \'${2:controller#action}\''    
+
+  'member routes':
+    'prefix': 'mem'
+    'body': 'member do\n  ${1:get :${2:action}}\n  ${3:put :${4:action}}\n  ${5:post :${6:action}}\n  ${7:delete :${8:action}}\nend'
+  'collection routes':
+    'prefix': 'col'
+    'body': 'collection do\n  ${1:get :${2:action}}\n  ${3:put :${4:action}}\n  ${5:post :${6:action}}\n  ${7:delete :${8:action}}\nend'
+  'resources':
+    'prefix': 'res'
+    'body': 'resources :${1:posts}${2: do\n  $3\nend}'
